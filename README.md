@@ -44,3 +44,12 @@ var_dump($vs->desc());
 // result => ['1.30.3', '1.0.99', '1.0.4', '1.0.1']
 
 ```
+
+## Support Version.
+
+- PHP 5.3
+- PHP 5.4
+- PHP 5.5
+- PHP 5.6
+- PHP 7.0
+- HHVM
