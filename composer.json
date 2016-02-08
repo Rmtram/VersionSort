@@ -1,0 +1,39 @@
+{
+  "name": "rmtram/version-sort",
+  "type": "library",
+  "description": "Version sort",
+  "keywords": [
+    "version",
+    "api",
+    "sort",
+    "version-sort",
+    "api-version-sort",
+    "version sort",
+    "api version sort"
+  ],
+  "homepage": "https://github.com/Rmtram/VersionSort",
+  "support": {
+    "issues": "https://github.com/Rmtram/VersionSort/issues",
+    "source": "https://github.com/Rmtram/VersionSort"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rmtram",
+      "email": "rmtram95@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rmtram\\VersionSort\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Rmtram\\VersionSort\\Tests\\": "tests/"
+    }
+  }
+}
