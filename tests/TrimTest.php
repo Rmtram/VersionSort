@@ -17,10 +17,10 @@ class TrimTest extends \PHPUnit_Framework_TestCase
      */
     public function testPrefixAlphabetOfOneCharacter()
     {
-        $versions = ['v1.0.1'];
+        $versions = array('v1.0.1');
         $vs = new VersionSort($versions);
         $expected = $vs->trim()->get();
-        $actual = ['1.0.1'];
+        $actual = array('1.0.1');
         $this->assertEquals($expected, $actual);
     }
 
@@ -30,10 +30,10 @@ class TrimTest extends \PHPUnit_Framework_TestCase
      */
     public function testPrefixAlphabetOfFiveCharacter()
     {
-        $versions = ['abcdef1.0.1'];
+        $versions = array('abcdef1.0.1');
         $vs = new VersionSort($versions);
         $expected = $vs->trim()->get();
-        $actual = ['1.0.1'];
+        $actual = array('1.0.1');
         $this->assertEquals($expected, $actual);
     }
 
@@ -43,10 +43,10 @@ class TrimTest extends \PHPUnit_Framework_TestCase
      */
     public function testPrefixSymbols()
     {
-        $versions = ['@-#*&^$~=`|[]:;"\'.,/\\1.0.1'];
+        $versions = array('@-#*&^$~=`|[]:;"\'.,/\\1.0.1');
         $vs = new VersionSort($versions);
         $expected = $vs->trim()->get();
-        $actual = ['1.0.1'];
+        $actual = array('1.0.1');
         $this->assertEquals($expected, $actual);
     }
 
